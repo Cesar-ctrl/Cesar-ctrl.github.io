@@ -1,0 +1,354 @@
+
+.v498_236 {
+    width: 100%;
+    height: 424px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    display: flex;
+    position: relative;
+    top: 78px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v127_330 {
+      border-top: 5px solid red;
+    width: 100%;
+    height: 424px;
+    background-color: rgba(217, 71, 79, 0.6);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v127_331 {
+    width: 100%;
+    height: 252px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 154px;
+    left: 20px;
+    overflow: hidden;
+  }
+  .v127_342 {
+    width: 100%;
+    height: 118px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 135px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v127_343 {
+    width: 100%;
+    height: 118px;
+    background: rgba(217, 71, 79, 0.6);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v498_235 {
+    width: 980px;
+    height: 59px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 59px;
+    left: 18px;
+    overflow: hidden;
+  }
+  .v422_199 {
+    width: 980px;
+    color: rgba(0,0,0,1);
+    top: 0px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v498_234 {
+    width: 150px;
+    height: 31px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 17px;
+    left: 90px;
+    overflow: hidden;
+  }
+  .v127_345 {
+    width: 150px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Bebas Neue;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v498_233 {
+    width: 50px;
+    height: 50px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    overflow: hidden;
+  }
+  .v127_346 {
+    width: 50px;
+    height: 50px;
+    background: url("../img/clases-iconos/BardoLogo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+  }
+  .v127_347 {
+    width: 100%;
+    height: 118px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v127_348 {
+    width: 100%;
+    height: 118px;
+    background: rgba(217, 71, 79, 0.6);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v498_232 {
+    width: 980px;
+    height: 52px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 18px;
+    overflow: hidden;
+  }
+  .v422_198 {
+    width: 980px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v498_230 {
+    width: 150px;
+    height: 31px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 17px;
+    left: 90px;
+    overflow: hidden;
+  }
+  .v127_350 {
+    width: 150px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Bebas Neue;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v498_231 {
+    width: 50px;
+    height: 50px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    overflow: hidden;
+  }
+  .v127_351 {
+    width: 50px;
+    height: 50px;
+    background: url("../img/clases-iconos/BarbariaLogo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+  }
+  .v127_352 {
+    width: 100%;
+    height: 111px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    overflow: hidden;
+  }
+  .v498_229 {
+    width: 100%;
+    height: 55px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v498_228 {
+    width: 240px;
+    height: 55px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 780px;
+    overflow: hidden;
+  }
+  .v127_353 {
+    width: 240px;
+    height: 55px;
+    background: rgba(241,241,241,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v127_354 {
+    width: 240px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: center;
+  }
+  .v498_227 {
+    width: 760px;
+    height: 55px;
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v127_355 {
+    width: 760px;
+    height: 55px;
+    background: rgba(241,241,241,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .v127_356 {
+    width: 760px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v127_357 {
+    width: 240px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 18px;
+    opacity: 1;
+    text-align: left;
+  }
+  .name {
+    color: #fff;
+  }

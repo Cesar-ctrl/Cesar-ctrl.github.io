@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    margin: 0px;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.header1{
+    flex-direction: row;
+}
+
+.header1 img{
+    display: flex;
+    width: 100%;
+}
+.header1 svg{
+    display: block;
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.menu{
+    margin:0px;
+    padding:0px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    padding-left:3px;
+    padding-right:3px;
+    transition-duration: 0.3s;
+}
+
+li g {
+    fill: black;
+    transition-duration: 0.3s;
+}
+
+.menu li:hover{
+    background-color: rgb(235, 233, 233);
+    color:rgba(122, 0, 0, 1);
+    
+}
+.menu li a:hover{
+    background-color: rgb(235, 233, 233);
+    color:rgba(122, 0, 0, 1);
+    
+}
+li:hover g {
+    fill: rgba(122, 0, 0, 1);
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+
+a h1{
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: 8px;
+}
+
+main#dragons{
+    background-image: url("../img/fondo/dragonfondo.png");
+}
+main#escudo{
+    background-image: url("../img/fondo/escudofondo.png");
+}
+
+.borde{
+    display: flex;
+    width: 100%;
+}
+
+#imagenes{
+    display: block;
+    background-size: cover; 
+    width: 100%;
+}
+#imagen {
+    height: 65vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+}
+
+#imagenes img{
+    display: block;
+    width: 100%;
+}
+
+#retroceder {
+    position: absolute;
+    top: 46%;
+    padding: 0;
+    left: 10px;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+}
+
+#avanzar {
+    position: absolute;
+    top: 46%;
+    right: 10px;
+    padding: 0;
+    background: #ddd;
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+}
+.texto-absoluto{
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    font-size: 24px;
+    color: white;
+    max-width: 550px;
+    margin: 0px;
+}
+
+.clases h1{
+    margin: 0px;
+}
+
+.muestras {
+    display: flex;
+    justify-content: space-between;
+}
+.muestras img{
+    width: 100%;
+}
+
+.muestras li{
+    flex-direction: column;
+    padding-left:3px;
+    padding-right:3px;
+    position: relative;
+    width: 30%;
+}
+.muestras li div{
+    padding-left:3px;
+    padding-right:3px;
+    margin-left:5%;
+}
+#introduccion {
+    display: flex;
+    justify-content: space-around;
+}
+#introduccion .introduccion{
+    width: 70%;
+}
+section#menu {
+    position:absolute;
+    left:0px;
+    top:0px;
+    padding:8px;
+    background-color:rgb(27, 18, 32);
+    font-weight:normal;
+    white-space:nowrap;
+}
+@keyframes changeColor {
+    0% {
+        background: red;
+    }
+    50% {
+        background: blue;
+    }
+    100% {
+        background: green;
+    }
+}
+menu{
+    color: white;
+    display: block;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    left:100%;
+    width:200px;
+}
+menu:hover{
+    background-color:rgb(27, 18, 32);
+    font-weight:bold;
+    color: white;
+    animation: changeColor 2s ease 0s infinite;
+    display:block;
+}
+
+menu[title]:before{
+    content:attr(title);
+}
+@keyframes changeColor {
+    0% {
+        background: red;
+    }
+    50% {
+        background: blue;
+    }
+    100% {
+        background: green;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+    width: 43%;
+    padding: 2%;
+    height: 100%;
+    left: 25%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 2s ease-in-out;
+    margin: 0;    
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}

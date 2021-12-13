@@ -1,0 +1,255 @@
+
+#contenido{
+    left: 50%;
+}
+
+#lista-iconos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#iconos{
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 80%;
+    border-top: 4px solid #bc0f0f;
+    background-color: rgba(217, 71, 79, 0.6);
+}
+
+#iconos div#mas-contenido{
+    width:12.5%;
+}
+
+.buscador{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+}
+
+.buscador li{
+    padding-left:3px;
+    padding-right:3px;
+    width: 12.5%; 
+    cursor:pointer;
+}
+.buscador li img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.buscador li span{
+    display: block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+#mas-contenido{    
+    display: block;
+    position:relative;
+    width: 60%;
+    height: 60%;
+    padding: 0px 3px;
+}
+    
+#boton-mas{
+    display: flex;
+    width: 80px;   
+    height: 80px;
+    background: #bc0f0f;
+    border-radius: 50%;
+    margin: 0 auto 0;
+    cursor: pointer;
+    transition: box-shadow .1s;
+    
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+.nameof{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+}
+div .nameof{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    width: 90px;
+}
+#buscador li span{
+    margin: auto;
+}
+span.aberration-icon{
+    background-image: url(../img/monstruos-iconos/aberration.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    
+}
+span.aberration-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.beast-icon{
+    background-image: url(../img/monstruos-iconos/beast.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.beast-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.celestial-icon{
+    background-image: url(../img/monstruos-iconos/celestial.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.celestial-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.construct-icon{
+    background-image: url(../img/monstruos-iconos/construct.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.construct-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.dragon-icon{
+    background-image: url(../img/monstruos-iconos/dragon.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.dragon-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.elemental-icon{
+    background-image: url(../img/monstruos-iconos/elemental.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.elemental-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.fey-icon{
+    background-image: url(../img/monstruos-iconos/fey.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.fey-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.fiend-icon{
+    background-image: url(../img/monstruos-iconos/fiend.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.fiend-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.giant-icon{
+    background-image: url(../img/monstruos-iconos/giant.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.giant-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.humanoid-icon{
+    background-image: url(../img/monstruos-iconos/humanoid.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.humanoid-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.monstrosity-icon{
+    background-image: url(../img/monstruos-iconos/monstrosity.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.monstrosity-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.ooze-icon{
+    background-image: url(../img/monstruos-iconos/ooze.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.ooze-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.plant-icon{
+    background-image: url(../img/monstruos-iconos/plant.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.plant-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+span.undead-icon{
+    background-image: url(../img/monstruos-iconos/undead.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+span.undead-icon.checked{
+    outline: 4px solid #bc0f0f;
+    opacity: 1;
+}
+
+.filtros{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 15px;
+    justify-content: space-evenly;
+    background-color: rgba(217, 71, 79, 0.6);
+}
+li input, li select{
+    border-radius: 0;
+    height: 50px;
+    background-color: white;
+    box-shadow: inset 0 0 4px 0 rgb(138 177 198 / 48%);
+    border: solid 1px #d8dde3;
+    box-sizing: border-box;
+}
+.double-listing{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.double-listing div{
+    width: 40%;
+
+}

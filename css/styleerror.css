@@ -1,0 +1,120 @@
+:root {
+    --normal-font: 'Scope One',serif;
+    --terminal-font: 'Victor Mono',Inconsolata,Consolas,monospace;
+    --header-font: Montserrat,'Times New Roman',fantasy;
+    --icon-font: 'Font Awesome 5 Free';
+    --icon-brands-font: 'Font Awesome 5 Brands';
+    --wrapper-width: 1024px;
+    font-family: 'Scope One',serif;
+    font-family: var(--normal-font);
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #111;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: #000;
+    color: #aaa;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Montserrat,'Times New Roman',fantasy;
+    font-family: var(--header-font);
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 110%
+}
+
+@keyframes changeColor {
+    0% {
+        background: red;
+    }
+    50% {
+        background: blue;
+    }
+    100% {
+        background: green;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 100%;
+    padding-bottom: 2.5rem;
+    margin: 0;
+    animation: nope 4s linear infinite;
+ 
+}
+
+strong {
+    font-family: Montserrat,'Times New Roman',fantasy;
+    font-family: var(--header-font);
+    letter-spacing: -.5pt;
+    color: yellow;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
+
+.broken {
+    background: #111;
+    width: 32%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+a {
+    color: cyan;
+}
+
+.zero {
+    color: #aaa;
+}
+
+@keyframes nope {
+    0%, 38%, 57%, 100% { transform: rotate(0); }
+    40%, 50% { transform: rotate(360deg); }
+    45%, 55% { transform: rotate(-360deg); }
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+
+}
+
+.path {
+    position: relative;
+    width: 100vw;
+    height: 102px;
+    margin-bottom: 22px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.folder {
+    position: absolute;
+    animation: walk 4s linear infinite;
+}
+
+@keyframes walk {
+    0% { transform:  translate(-25vw) ; }
+    25%, 75% { transform: translate(calc(50vw - 65px)) rotate(720deg);}
+    100% { transform: translate(100vw);}
+}
