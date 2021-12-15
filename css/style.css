@@ -232,8 +232,8 @@ menu[title]:before{
     opacity: 1;
 }
 #popupBody{
-    width: 43%;
-    padding: 2%;
+    width: 623px;
+    padding: 1px;
     height: 100%;
     left: 25%;
     border-radius: 15px;
@@ -241,7 +241,8 @@ menu[title]:before{
     background: #FFF;
     position: relative;
     transition: all 2s ease-in-out;
-    margin: 0;    
+    margin: 0;
+    position: absolute;   
 }
 #cerrar{
     position: absolute;
