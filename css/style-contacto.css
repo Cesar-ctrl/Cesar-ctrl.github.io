@@ -1,157 +1,79 @@
-* {
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
-body {
-  font-size: 14px;
+body{
+    font-size: 14px;
 }
-.v496_194 {
-  width: 622px;
-  height: 680px;
-  background: rgba(255,255,255,1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+
+.ideintifica {
+    text-align: center;
 }
-.v496_196 {
-  width: 622px;
-  height: 680px;
-  background: url("../img/imagen-principal-borde/background-contacto-iniciosesion.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
+#problema{
+    width: 70vh;
 }
-.v496_215 {
-  width: 540px;
-  height: 602px;
-  background: rgba(207,207,207,1);
-  opacity: 1;
-  position: absolute;
-  top: 39px;
-  left: 41px;
-  overflow: hidden;
+.email {
+    text-align: center;
 }
-.v496_216 {
-  width: 500px;
-  height: 39px;
-  background: rgba(133,133,133,1);
-  opacity: 1;
-  position: absolute;
-  top: 581px;
-  left: 61px;
-  overflow: hidden;
+#correo{
+    width: 70vh;
 }
-.v496_217 {
-  width: 500px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 581px;
-  left: 61px;
-  font-family: Montserrat;
-  font-weight: Regular;
-  font-size: 14px;
-  opacity: 1;
-  text-align: center;
+.asuntos {
+    text-align: center;
 }
-.v496_218 {
-  width: 500px;
-  height: 115px;
-  background: rgba(241,241,241,1);
-  opacity: 1;
-  position: absolute;
-  top: 408px;
-  left: 61px;
+#asunto{
+    width: 70vh;
 }
-.v496_219 {
-  width: 240px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 388px;
-  left: 61px;
-  font-family: Montserrat;
-  font-weight: Regular;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+.decription {
+    text-align: center;
 }
-.v496_220 {
-  width: 500px;
-  height: 38px;
-  background: rgba(241,241,241,1);
-  opacity: 1;
-  position: absolute;
-  top: 310px;
-  left: 61px;
+#descripcion {
+    width: 70vh;
 }
-.v496_221 {
-  width: 240px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 290px;
-  left: 61px;
-  font-family: Montserrat;
-  font-weight: Regular;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+.registro{
+    background-image: url("../img/imagen-principal-borde/background-contacto-iniciosesion.png");
+    max-width: 623px;
+    max-height: 680px;
+    width: 100%;
+    height: 100vh;
+    padding: 39px;
+    margin-right: 0;
 }
-.v496_222 {
-  width: 500px;
-  height: 38px;
-  background: rgba(241,241,241,1);
-  opacity: 1;
-  position: absolute;
-  top: 214px;
-  left: 61px;
+#contacto{
+    background: rgba(207,207,207,1);
+    width: 100%;
+    height: 100vh;
+    max-height: 600px;
 }
-.v496_223 {
-  width: 240px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 194px;
-  left: 61px;
-  font-family: Montserrat;
-  font-weight: Regular;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+h3{
+    padding-top: 3vh;
+    margin-top: 0px;
+    padding-left: 1vh;
+    font-family: Montserrat;
+    margin-bottom: 10px;
 }
-.v496_224 {
-  width: 500px;
-  height: 38px;
-  background: rgba(241,241,241,1);
-  opacity: 1;
-  position: absolute;
-  top: 117px;
-  left: 61px;
+h4{
+    margin-top: 4vh;
+    padding-left: 4vh;
+    font-family: Montserrat;
+    margin-bottom: 15px;
 }
-.v496_225 {
-  width: 260px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 97px;
-  left: 61px;
-  font-family: Montserrat;
-  font-weight: Regular;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
+
+input{
+    height: 30px;
+    background: #F1F1F1;
+    border: 0;
 }
-.v496_226 {
-  width: 260px;
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 39px;
-  left: 61px;
-  font-family: Montserrat;
-  font-weight: Regular;
-  font-size: 18px;
-  opacity: 1;
-  text-align: left;
+#descripcion{
+    border: 0;
+    width: 500px;
+    height: 115px;
+    text-align:start;
+}
+.enviar{
+    margin-top: 3vh;
+    height: 30px;
+    border: 0;
+    width: 70vh;
+    background: rgba(133,133,133,1);
+    font-size: 14px;
 }

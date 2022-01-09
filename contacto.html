@@ -4,24 +4,47 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="css/style-contacto.css" rel="stylesheet" />
     <title>Document</title>
+    <!--No sabes lo nervioso que me pone hacer esto.
+    No sé sobre la estructura del html ni como le afecta menter un style
+    dentro del html en vez de una página css.
+    Pero lo que si se es que es complicado y poco organizativo a la hora de
+    programarlo y leerlo.
+    Cada cosa en su lugar, es algo básico, css en páginas css, html en html y scripts en js.-->
+    <style>
+        #boton{
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="v496_194">
-        <div class="v496_214">
-            <div class="v496_196">
-            </div><div class="v496_215"></div>
-            <div class="v496_216"></div>
-            <span class="v496_217">Iniciar Sesión</span>
-            <div class="v496_218"></div>
-            <span class="v496_219">Descripción</span>
-            <div class="v496_220"></div>
-            <span class="v496_221">Asunto</span>
-            <div class="v496_222"></div>
-            <span class="v496_223">Correo electrónico</span>
-            <div class="v496_224"></div>
-            <span class="v496_225">Ideintifica el problema</span>
-            <span class="v496_226">Asistencia</span>
-        </div>
+    <div class="registro">
+        <form action="" id="contacto">
+            <h3>Asistencia</h3>
+            <h4>Ideintifica el problema</h4>
+            <div class="ideintifica">
+                <input type="text" id="problema">
+            </div>
+            <h4>Correo electrónico</h4>
+            <div class="email">
+                <input type="text" id="correo">
+            </div>
+            <h4>Asunto</h4>
+            <div class="asuntos">
+                <input type="text" id="asunto">
+            </div>
+            <h4>Descripción</h4>
+            <div class="decription">
+                <input type="text" id="descripcion">
+            </div>
+            <div id="boton">
+                <button class="enviar" style="color:white">Enviar</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>

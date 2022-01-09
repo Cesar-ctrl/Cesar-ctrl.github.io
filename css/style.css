@@ -2,6 +2,7 @@
 
 body{
     margin: 0px;
+    width: 100%;
     
 }
 
@@ -60,6 +61,7 @@ a:link, a:visited, a:active {
 }
 
 a h1{
+    font-size:3vh;
     text-align: center;
     margin-bottom: -10px;
     margin-top: 8px;
@@ -151,6 +153,7 @@ main#escudo{
     width: 30%;
 }
 .muestras li div{
+    font-size: 1vw;
     padding-left:3px;
     padding-right:3px;
     margin-left:5%;
@@ -232,14 +235,14 @@ menu[title]:before{
     opacity: 1;
 }
 #popupBody{
-    width: 623px;
+    width: 654px;
     padding: 1px;
     height: 100%;
     left: 25%;
     border-radius: 15px;
     box-shadow: 0 0 5px #CCC;
     background: #FFF;
-    position: relative;
+    position: relative; 
     transition: all 2s ease-in-out;
     margin: 0;
     position: absolute;   
@@ -253,4 +256,15 @@ menu[title]:before{
     font-weight: bold;
     text-decoration: none;
     color: #F00;
+}
+#hamburguesa{
+    display: none;
+    
+}
+@media only screen and (max-width: 1100px) {
+
+    .header1 img{
+        display: flex;
+        width: 100%;
+    }
 }
