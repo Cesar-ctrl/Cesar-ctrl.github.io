@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
+    <link href="css/style-popup.css" rel="stylesheet" />
+    <title>Inicio Sesión</title>
+    <style>
+        #boton{
+            height: 19vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            margin-left: 3.5%;
+            margin-right: 3.5%;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="ventana">
+        <form action="" id="formulario">
+            <h3>Iniciar sesión</h3>
+            <div class="email">
+                <h4>Nombre de usuario o email</h4>
+                <input type="text" id="correo">
+            </div>
+            <div class="campo">
+                <h4>Contraseña</h4>
+                <input type="text" id="password">
+            </div>
+            <div class="recuerda">
+                <input type="checkbox" class="checkbox" style="color:rgba(225, 225, 225, 1)">
+                <label for="">Recordarme</label>
+            </div>
+            <div id="boton">
+                <button class="enviar" style="color:white"><a href="registro.html">Inicia Sesión</a></button>
+                <a href="registro.html">Registrarse</a>
+                <a href="">¿Ha olvidado su contraseña?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

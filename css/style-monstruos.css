@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 #contenido{
     left: 50%;
 }
@@ -72,15 +72,14 @@
 input[type="checkbox"]{
     display: none;
 }
-
 .nameof{
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     width: 100%;
 }
 div .nameof{
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     width: 90px;
 }
 #buscador li span{
@@ -90,7 +89,6 @@ span.aberration-icon{
     background-image: url(../img/monstruos-iconos/aberration.jpg);
     background-size: cover;
     opacity: 0.5;
-    
 }
 span.aberration-icon.checked{
     outline: 4px solid #bc0f0f;
@@ -252,4 +250,26 @@ li input, li select{
 .double-listing div{
     width: 40%;
 
+}
+@media only screen and (max-width: 1100px) {
+    .buscador{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        width: 800px;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .buscador li{
+        width: 700px;
+        padding: 5px;
+    }
+    #iconos{
+        padding: 1vh;
+        width: 95%;
+    }
+    .filtros{
+        width: 95%;
+    }
+    
 }

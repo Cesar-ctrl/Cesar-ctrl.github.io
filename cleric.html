@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="js/main.js"></script>
+    <title>Clérigo</title>
+
+    <script>
+        'use strict'
+        const handleRrror = response =>{
+            if(!response.ok){
+                throw Error (response.status)
+            } else {
+                return response;
+            }
+        }
+
+        const handleResponse = response => response.json()
+        document.addEventListener("DOMContentLoaded", function(){
+            console.log("LOG- Antes de llamada");
+            fetch("https://www.dnd5eapi.co/api/classes/cleric")
+            .then(respuesta => {
+                console.log("LOG- 1ª peticion")
+                return respuesta.json()
+            })
+            .then (data =>{
+                console.log("LOG- 2ª peticion");
+                let log = document.getElementById("log");
+                let puntos = document.getElementById("hit_die")
+                let hit_die = document.createTextNode(data.hit_die)
+                puntos.appendChild(hit_die)
+                let competencias = data.proficiencies
+                for (let h = 0; h < competencias.length; h++) {
+                    let armadura = competencias[h];
+                    document.getElementById(armadura.index).appendChild( document.createTextNode(armadura.name))
+                }
+                let skills = data.proficiency_choices[0].from
+                for (let h = 0; h < skills.length; h++) {
+                    let habilidad = skills[h];
+                    let form =  document.getElementById("form")
+                    let span = document.createElement("span")
+                    span.innerHTML = habilidad.name+", "
+                    form.appendChild(span)
+                    //document.getElementById(habilidad.index).appendChild( document.createTextNode(habilidad.name))
+                    
+                }
+                let tirada_salvacion = data.saving_throws
+                for (let h = 0; h < tirada_salvacion.length; h++) {
+                    let tirada = tirada_salvacion[h];
+                    document.getElementById(tirada.index).appendChild( document.createTextNode(tirada.name))
+                    
+                }
+
+            })
+            
+        })
+
+    </script>
 </head>
 <body>
     <header class="header1">
@@ -157,69 +208,42 @@
             </nav>
         </section>
     </header>
-    <main id="dragons">
-        <section id="menu">
-            <menu>Atrás</menu>
-            <menu>Adelante</menu>
-            <menu>Recargar</menu>
-            <menu>Añadir al acceso rápido</menu>
-            <menu>Añadir a marcadores...</menu>
-            <menu>Entrar en pantalla completa</menu>
-            <menu>Copiar dirección</menu>
-            <menu>Guardar como...</menu>
-            <menu>Guardar como PDF...</menu>
-            <menu>Forzar página oscura</menu>
-            <menu>Imprimir...</menu>
-            <menu>Difundir...</menu>
-            <menu>Origen de la página</menu>
-            <menu>Inspeccionar elemento</menu>
-        </section>
-       <section id="imagenes">
-            <button id="retroceder"><</button>
-          
-            <div id="imagen"></div>
-            <button id="avanzar">></button>
+    <main id="escudo">
+        <section id="imagenes">
+            <img src="img/imagen-principal-borde/Barbarian.png" >
             <img id="borde" class="borde" src="img/imagen-principal-borde/FooterImg.png" alt="">
+        </section>  
+        <section id="introduccion">
+            <div class="introduccion">
+                <h1>Breve introducción</h1>
+                <p>El juego de rol Dungeons & Dragons trata de contar historias en mundos de espadas y hechicería. Al igual que los juegos de fantasía, D&D está impulsado por la imaginación. Se trata de imaginar un castillo en ruinas en un bosque cada vez más oscuro e imaginar cómo podría reaccionar un aventurero de fantasía a los desafíos que presenta la escena.</p>
+            </div>
+            <div><img src="img/daditos.png" alt=""></div>
         </section>
-        
-        <section class="clases">
-            <h1>CLASES</h1>
-            <ul class="muestras">
-                <li>
-                    <img src="img/Guerrero-inicio.png" alt="">
-                    <div>
-                        <h2>Guerrero</h2>
-                        <p>Todos los guerreros comparten un dominio magistral de las armas y armaduras, y un exhaustivo conocimiento de las habilidades del combate.</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/Barbaro-inicio.png" alt="">
-                    <div>
-                        <h2>Bárbaro</h2>
-                        <p>Para algunos, su rabia brota de la comunión con espíritus de animales salvajes. Otros recurren a su hirviente reserva de ira frente a un mundo lleno de dolor...</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="img/Group 22.png" alt="">
-                    <div>
-                        <h2>Brujo</h2>
-                        <p>Los brujos son buscadores del conocimiento que se encuentra escondido en el multiverso. A través de pactos hechos con seres poderosos de poder sobrenatural...</p>
-                    </div>
-                </li>
-            </ul>
+        <section id="puntos-golpe">
+            <h2>Puntos de Golpe</h2>
+            <p><span>Puntos de golpe: 1d</span><span id="hit_die"></span> por nivel de bárbaro.</p>
+            <p><span>Puntos de golpe a nivel 1: </span><span id="hit_die"></span> + tu modificador de Constitución.</p>
         </section>
+        <section id ="competencias">
+            <h2>Competencias</h2>
+            <p><span>Armadura: </span> <span id="light-armor"></span>, <span id="medium-armor"> </span>, <span id="shields"></span></p>
+            <p><span>Armas: </span> <span id="simple-weapons"></span>, <span id="martial-weapons"></span></p>
+            <p><span>Habilidades: </span> <span id="form"></span></p>
+            <p><span>Tiradas de Salvación: </span> <span id ="str"></span>, <span id ="con"></span></p>
+        </section>
+
+
+       <div id="login" class="overlay">
+            <iframe id="popupBody" src="login.html">
+            </iframe>
+            <a id="cerrar" href="#">&times;</a>
+        </div>
         <div id="contacto" class="overlay">
             <iframe id="popupBody" src="contacto.html">
             </iframe>
-            <a id="cerrar" href="   ">&times;</a>
-        </div>
-        <div id="login" class="overlay">
-            <iframe id="popupBody" src="login.html">
-            </iframe>
-            <a id="cerrar" href="">&times;</a>
+            <a id="cerrar" href="#">&times;</a>
         </div>
     </main>
-
 </body>
-
 </html>

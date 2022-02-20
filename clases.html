@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/style-clases.css" />
-    <title>Monstruos</title>
+    <title>Clases</title>
+    <script src="js/main-dark.js"></script>
 </head>
 <body>
     <header class="header1">
-        <img src="img/iconos-menu/Head-Logo.png" alt="">
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="index.html"><h1>Inicio</h1>
+        <section class="header2">
+            <div class="Picture">
+                <picture>
+                    <source srcset="img/iconos-menu/Head-Log-Movil.png" media="(max-width: 1100px)">
+                    <source srcset="img/iconos-menu/Head-Logo.png" media="(max-width: 1500px)"> 
+                    <img src="img/iconos-menu/Head-Logo.png" alt="Flowers" >
+                </picture>
+            </div>
+            <a href="#navegar"><img id="menudos" src="img/Movil/hamburguesa.png" alt=""></a>
+            <nav id="navegar">
+
+                <ul class="menu" id="elmenu">
+                    <a href="#">&times;</a>
+                    <li>
+                        <a href="index.html"><h1>Inicio</h1>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -31,10 +41,10 @@
                             -1 -58 -5 -29 -6 -35 -3 -52 26 -14 21 -20 46 -18 72 3 33 7 40 28 45 32 8 38
                             42 11 69 -25 25 -44 26 -66 4z"/>
                         </g>
-                    </svg></a>
-                </li>
-                <li>
-                    <a href="empezando.html"><h1>Empezando</h1>
+                        </svg></a>
+                    </li>
+                    <li>
+                        <a href="empezando.html"><h1>Empezando</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -51,10 +61,10 @@
                         -373 140 -397 140 -6 0 4 -15 21 -32z"/>
                         </g>
                         </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="monstruos.html"><h1>Monstruos</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="monstruos.html"><h1>Monstruos</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -80,10 +90,10 @@
                                4 -4 65 -11 135 -15 102 -6 139 -4 185 8 32 9 56 21 54 27 -5 17 -65 19 -123
                                6 -43 -11 -55 -10 -82 4 -17 9 -37 16 -44 16 -7 0 5 -9 27 -19z"/>
                            </g>
-                       </svg></a>
-                </li>
-                <li>
-                    <a href="clases.html"><h1>Clases</h1>
+                           </svg></a>
+                    </li>
+                    <li>
+                        <a href="clases.html"><h1>Clases</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -99,10 +109,10 @@
                                l-176 0 0 29 c0 27 2 28 65 35 35 4 108 18 162 31 54 14 99 25 100 25 2 0 3
                                -7 3 -15 0 -24 14 -18 58 27 35 35 62 91 50 103 -1 2 -28 -10 -58 -26z"/>
                            </g>
-                       </svg></a>
-                </li>
-                <li>
-                    <a href="#contacto"><h1>Contacto</h1>
+                           </svg></a>
+                    </li>
+                    <li>
+                        <a href="#contacto"><h1>Contacto</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -122,10 +132,10 @@
                                -95 -2 -15 -10 -22 -9 -38 5 -20 18 -34 21 -45 10z"/>
                            </g>
                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#registro"><h1>Iniciar Sesión</h1>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="perfil.html"><h1>Mi Perfil</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -143,9 +153,10 @@
                        </svg>
                        
                     </a>
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main id="escudo">
         <section id="imagenes">
@@ -155,65 +166,49 @@
                 <h3></h3>
                 <p></p>
             </div>  
-            <img src="img/imagen-principal-borde/FooterImg.png" alt="" class="borde">
+            <img src="img/imagen-principal-borde/FooterImg.png" alt="" id="borde" class="borde">
         </section>
-        <section class="contenido">
-            <div class="v127_329">
-                <div class="v498_236">
-                    <div class="v127_330"></div>
-                    <div class="v127_331">
-                        <div class="v127_342">
-                            <div class="v127_343"></div>
-                            <div class="v498_235">
-                                <span class="v422_199">Ya sea un erudito, un poeta o un canalla, un bardo teje su magia a través de sus palabras y su música para inspirar a los aliados, desmoralizar a los enemigos, manipular mentes, crear ilusiones e incluso sanar heridas.</span>
-                            </div>
-                            <div class="v498_234">
-                                <span class="v127_345">Bárdo</span>
-                            </div>
-                            <div class="v498_233">
-                                <div class="v127_346"></div>
-                            </div>
-                        </div>
-                        <div class="v127_347">
-                            <div class="v127_348"></div>
-                            <div class="v498_232">
-                                <span class="v422_198">Para algunos, su rabia brota de la comunión con espíritus de animales salvajes. Otros recurren a su hirviente reserva de ira frente a un mundo lleno de dolor. Para los bárbaros, la furia es un poder que no sólo les proporciona un frenesí ciego en la batalla, sino también extraordinarios reflejos, resistencia y proezas de fuerza.</span>
-                            </div>
-                            <div class="v498_230">
-                                <span class="v127_350">Bárbaro</span>
-                            </div>
-                            <div class="v498_231">
-                                <div class="v127_351"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="v127_352">
-                        <div class="v498_229">
-                            <div class="v498_228">
-                                <div class="v127_353"></div>
-                                <span class="v127_354">Buscar</span>
-                            </div>
-                            <div class="v498_227">
-                                <div class="v127_355"></div>
-                                <span class="v127_356">Buscar por nombre</span>
-                            </div>
-                        </div>
-                        <span class="v127_357">BUSCAR CLASE</span>
-                    </div>
-                    
+        
+        <section id="contenido">
+            <header><h1>TODAS LAS CLASES</h1></header>
+            <section id="buscador">
+                <header><h2>BUSCAR CLASE</h2></header>
+                <div class="barra">
+                    <input type="text">
+                    <button>Buscar</button>
                 </div>
-            </div>
+            </section>
+            <section id="resultados">
+                <ul class="lista-resultados">
+                    <li class="barbarian">
+                        <a href="">
+                            <span class="barbarian-icon" id="barbarian-icon"></span>
+                            <h3>BÁRBARO</h3>
+                            <p>
+                                Para algunos, su rabia brota de la comunión con espíritus de animales salvajes. Otros recurren a su hirviente reserva de ira frente a un mundo lleno de dolor. Para los bárbaros, la furia es un poder que no sólo les proporciona un frenesí ciego en la batalla, sino también extraordinarios reflejos, resistencia y proezas de fuerza.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="bardo">
+                        <a href="">
+                            <span class="bardo-icon" id="bardo-icon"></span>
+                            <h3>BÁRDO</h3>
+                            <p>
+                                Ya sea un erudito, un poeta o un canalla, un bardo teje su magia a través de sus palabras y su música para inspirar a los aliados, desmoralizar a los enemigos, manipular mentes, crear ilusiones e incluso sanar heridas.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </section>
+        
+
         <div id="contacto" class="overlay">
             <iframe id="popupBody" src="contacto.html">
             </iframe>
             <a id="cerrar" href="#">&times;</a>
         </div>
-        <div id="registro" class="overlay">
-            <iframe id="popupBody" src="registrarse.html">
-            </iframe>
-            <a id="cerrar" href="#">&times;</a>
-        </div>
+        <button onclick="littleDarkAge()">Dark Mode</button>
     </main>
 </body>
 </html>

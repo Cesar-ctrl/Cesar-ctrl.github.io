@@ -1,7 +1,7 @@
 let formulario = document.forms[0];
-let correoelec = document.querySelector("#v127_278");
-let contrasena1 = document.querySelector("#v127_274");
-let contrasena2 = document.querySelector("#v127_271");
+let correoelec = document.querySelector("#correo");
+let contrasena1 = document.querySelector("#password");
+let contrasena2 = document.querySelector("#confirmar");
 let emaill = new RegExp("[@]");
 let mayusculas = new RegExp("[A-Z]");
 let passMinus = new RegExp("[a-z]");
@@ -23,15 +23,12 @@ for (let i = 0; i < formulario.length; i++) {
         if (input == contrasena1){
             if (contrasena1.value.length < 4){
                 input.classList.add("incorrecto");
-                
             }
             if (mayusculas.test(contrasena1.value) == false){
                 input.classList.add("incorrecto");
-                
             }
             if (minusculas.test(contrasena1.value) == false){
                 input.classList.add("incorrecto");
-                
             }else{
                 input.classList.remove("incorrecto");
                 input.classList.add("correcto");
@@ -40,8 +37,12 @@ for (let i = 0; i < formulario.length; i++) {
         if (input == contrasena2){
             if (contrasena1.value != contrasena2.value){
                 input.classList.add("incorrecto");
-                
-            }else{
+
+            }
+            if (contrasena1.value.length < 4){
+                input.classList.add("incorrecto");
+            }
+            else{
                 input.classList.remove("incorrecto");
                 input.classList.add("correcto");
             }

@@ -11,11 +11,21 @@
 </head>
 <body>
     <header class="header1">
-        <img src="img/iconos-menu/Head-Logo.png" alt="">
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="index.html"><h1>Inicio</h1>
+        <section class="header2">
+            <div class="Picture">
+                <picture>
+                    <source srcset="img/iconos-menu/Head-Log-Movil.png" media="(max-width: 1100px)">
+                    <source srcset="img/iconos-menu/Head-Logo.png" media="(max-width: 1500px)"> 
+                    <img src="img/iconos-menu/Head-Logo.png" alt="Flowers" >
+                </picture>
+            </div>
+            <a href="#navegar"><img id="menudos" src="img/Movil/hamburguesa.png" alt=""></a>
+            <nav id="navegar">
+
+                <ul class="menu" id="elmenu">
+                    <a href="#">&times;</a>
+                    <li>
+                        <a href="index.html"><h1>Inicio</h1>
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -31,10 +41,10 @@
                             -1 -58 -5 -29 -6 -35 -3 -52 26 -14 21 -20 46 -18 72 3 33 7 40 28 45 32 8 38
                             42 11 69 -25 25 -44 26 -66 4z"/>
                         </g>
-                    </svg></a>
-                </li>
-                <li>
-                    <a href="empezando.html"><h1>Empezando</h1>
+                        </svg></a>
+                    </li>
+                    <li>
+                        <a href="empezando.html"><h1>Empezando</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -51,10 +61,10 @@
                         -373 140 -397 140 -6 0 4 -15 21 -32z"/>
                         </g>
                         </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="monstruos.html"><h1>Monstruos</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="monstruos.html"><h1>Monstruos</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -80,10 +90,10 @@
                                4 -4 65 -11 135 -15 102 -6 139 -4 185 8 32 9 56 21 54 27 -5 17 -65 19 -123
                                6 -43 -11 -55 -10 -82 4 -17 9 -37 16 -44 16 -7 0 5 -9 27 -19z"/>
                            </g>
-                       </svg></a>
-                </li>
-                <li>
-                    <a href="clases.html"><h1>Clases</h1>
+                           </svg></a>
+                    </li>
+                    <li>
+                        <a href="clases.html"><h1>Clases</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -99,10 +109,10 @@
                                l-176 0 0 29 c0 27 2 28 65 35 35 4 108 18 162 31 54 14 99 25 100 25 2 0 3
                                -7 3 -15 0 -24 14 -18 58 27 35 35 62 91 50 103 -1 2 -28 -10 -58 -26z"/>
                            </g>
-                       </svg></a>
-                </li>
-                <li>
-                    <a href="#contacto"><h1>Contacto</h1>
+                           </svg></a>
+                    </li>
+                    <li>
+                        <a href="#contacto"><h1>Contacto</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -122,10 +132,10 @@
                                -95 -2 -15 -10 -22 -9 -38 5 -20 18 -34 21 -45 10z"/>
                            </g>
                        </svg>
-                       </a>
-                </li>
-                <li>
-                    <a href="#registro"><h1>Iniciar Sesión</h1>
+                        </a>
+                    </li>
+                    <li>
+                    <a href="perfil.html"><h1>Mi Perfil</h1>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                         width="240.000000pt" height="62.000000pt" viewBox="0 0 240.000000 62.000000"
                         preserveAspectRatio="xMidYMid meet">
@@ -143,17 +153,18 @@
                        </svg>
                        
                     </a>
-                </li>
-            </ul>
-        </nav>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main id="dragons">
         <section id="imagenes">
             <img src="img/imagen-principal-borde/MonstruosFT.png">
             
-            <img src="img/imagen-principal-borde/FooterImg.png" class="borde">
+            <img src="img/imagen-principal-borde/FooterImg.png" id="borde" class="borde">
         </section>
-        <section id="contenido">
+        <secti  on id="contenido">
             <header><h1>Monstruos</h1></header>
             <section id="lista-iconos">
                 <div id="iconos">
@@ -359,12 +370,7 @@
         </section>
         <div id="contacto" class="overlay">
             <iframe id="popupBody" src="contacto.html">
-            </iframe>
-            <a id="cerrar" href="#">&times;</a>
-        </div>
-        <div id="registro" class="overlay">
-            <iframe id="popupBody" src="registrarse.html">
-            </iframe>
+            </iframe></p>
             <a id="cerrar" href="#">&times;</a>
         </div>
     </main>
